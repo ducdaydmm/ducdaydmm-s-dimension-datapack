@@ -1,0 +1,11 @@
+{
+  "type": "ducdaydmm:seabed",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "ducdaydmm:seabed",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "minecraft:warm_ocean"
+    }
+  }
+}
