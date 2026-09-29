@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "direction": "up",
+    "allowed_placement": {
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "minecraft:water"
+      ]
+    },
+    "prioritize_tip": false,
+    "layers": [
+      {
+        "height": {
+          "type": "minecraft:uniform",
+          "min_inclusive": 30,
+          "max_inclusive": 120
+        },
+        "provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "weight": 4,
+              "data": {
+                "Name": "minecraft:stone"
+              }
+            },
+            {
+              "weight": 2,
+              "data": {
+                "Name": "minecraft:sand"
+              }
+            },
+            {
+              "weight": 2,
+              "data": {
+                "Name": "minecraft:gravel"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

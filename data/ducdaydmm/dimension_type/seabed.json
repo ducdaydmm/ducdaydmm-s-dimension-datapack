@@ -3,7 +3,7 @@
   "has_skylight": true,
   "has_ceiling": false,
   "has_ender_dragon_fight": false,
-  "ambient_light": 0.0,
+  "ambient_light": 0.25,
   "has_fixed_time": false,
   "monster_spawn_light_level": 0,
   "monster_spawn_block_light_limit": 0,
@@ -11,6 +11,5 @@
   "height": 384,
   "logical_height": 384,
   "infiniburn": "#minecraft:infiniburn_overworld",
-  "skybox": "overworld",
-  "cardinal_light": "default"
+  "effects": "minecraft:overworld"
 }
