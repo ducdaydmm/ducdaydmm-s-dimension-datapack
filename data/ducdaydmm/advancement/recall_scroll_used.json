@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "use_recall_scroll": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:paper",
+          "predicates": {
+            "minecraft:custom_data": "{recall_scroll:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ducdaydmm:recall_scroll/activate"
+  }
+}
