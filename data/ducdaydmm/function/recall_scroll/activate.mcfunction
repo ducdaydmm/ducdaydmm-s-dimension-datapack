@@ -1,11 +1,5 @@
-# ===== Recall Scroll Activated =====
-# Called via advancement when player right-clicks the Recall Scroll
-
 # Revoke advancement so it can trigger again
 advancement revoke @s only ducdaydmm:recall_scroll_used
-
-# Re-give the Recall Scroll (consumed during right-click detection)
-function ducdaydmm:recall_scroll/give
 
 # Prevent re-activation if already in countdown
 execute if score @s recall_timer matches 1.. run return 0
@@ -13,7 +7,7 @@ execute if score @s recall_timer matches 1.. run return 0
 # Set countdown timer: 60 ticks = 3 seconds
 scoreboard players set @s recall_timer 60
 
-# --- Multiplayer Safe Tracking ---
+# Multiplayer Safe Tracking
 # Assign a unique ID to the player if they don't have one
 execute unless score @s recall_id matches 1.. run scoreboard players add #global recall_id 1
 execute unless score @s recall_id matches 1.. run scoreboard players operation @s recall_id = #global recall_id
