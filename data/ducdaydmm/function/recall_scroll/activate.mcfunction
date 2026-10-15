@@ -4,8 +4,8 @@ advancement revoke @s only ducdaydmm:recall_scroll_used
 # Prevent re-activation if already in countdown
 execute if score @s recall_timer matches 1.. run return 0
 
-# Set countdown timer: 60 ticks = 3 seconds
-scoreboard players set @s recall_timer 60
+# Set countdown timer: 100 ticks = 5 seconds
+scoreboard players set @s recall_timer 100
 
 # Multiplayer Safe Tracking
 # Assign a unique ID to the player if they don't have one
@@ -22,7 +22,7 @@ tag @e[type=armor_stand,tag=new_anchor] remove new_anchor
 playsound minecraft:block.amethyst_block.chime master @s ~ ~ ~ 1 0.5
 
 # Display initial countdown message
-title @s actionbar {"text":"✦ Recalling in 3...","color":"light_purple","bold":true}
+title @s actionbar {"text":"✦ Recalling in 5...","color":"light_purple","bold":true}
 
 # Summon visual effect 
 # bottom
