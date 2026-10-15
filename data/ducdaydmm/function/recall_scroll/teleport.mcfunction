@@ -1,10 +1,10 @@
 # ===== Recall Scroll Teleport =====
 # Teleports entities within range to World Origin after countdown completes
 
-# 1. Copy the player's ID to a global temp variable
+# Copy the player's ID to a global temp variable
 scoreboard players operation #temp recall_id = @s recall_id
 
-# 2. Teleport entities within distance=..3 from the recall anchor (excluding cannot_recall tag)
+# Teleport entities within distance=..3 from the recall anchor (excluding cannot_recall tag)
 execute as @e[type=armor_stand,tag=recall_anchor] if score @s recall_id = #temp recall_id at @s as @e[distance=..3,type=!#ducdaydmm:cannot_recall] at @s run tp @s 0 ~ 0
 
 # Play teleport sound effect at player's new location
