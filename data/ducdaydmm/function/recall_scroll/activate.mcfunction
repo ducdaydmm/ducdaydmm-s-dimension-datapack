@@ -4,8 +4,8 @@ advancement revoke @s only ducdaydmm:recall_scroll_used
 # Prevent re-activation if already in countdown
 execute if score @s recall_timer matches 1.. run return 0
 
-# Set countdown timer: 100 ticks = 5 seconds
-scoreboard players set @s recall_timer 100
+# Set countdown timer: 200 ticks = 10 seconds
+scoreboard players set @s recall_timer 200
 
 # Multiplayer Safe Tracking
 # Assign a unique ID to the player if they don't have one
@@ -13,7 +13,7 @@ execute unless score @s recall_id matches 1.. run scoreboard players add #global
 execute unless score @s recall_id matches 1.. run scoreboard players operation @s recall_id = #global recall_id
 
 # Summon an invisible armor stand to mark the activation location
-summon armor_stand ~ ~ ~ {Tags:["recall_anchor","new_anchor"],Invisible:1b,Marker:1b}
+summon armor_stand ~ ~ ~ {Tags:["recall_anchor","ControlParticle","new_anchor"],Invisible:1b,Marker:1b}
 # Assign the player's ID to the armor stand
 scoreboard players operation @e[type=armor_stand,tag=new_anchor] recall_id = @s recall_id
 tag @e[type=armor_stand,tag=new_anchor] remove new_anchor
@@ -22,7 +22,7 @@ tag @e[type=armor_stand,tag=new_anchor] remove new_anchor
 playsound minecraft:block.amethyst_block.chime master @s ~ ~ ~ 1 0.5
 
 # Display initial countdown message
-title @s actionbar {"text":"✦ Recalling in 5...","color":"light_purple","bold":true}
+title @s actionbar {"text":"✦ Recalling in 10...","color":"light_purple","bold":true}
 
 # Summon visual effect 
 # bottom
