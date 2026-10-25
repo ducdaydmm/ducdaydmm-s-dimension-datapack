@@ -5,8 +5,9 @@
 # Decrease timer by 1
 scoreboard players remove @s recall_timer 1
 
-# Particle effects during countdown
-particle minecraft:portal ~ ~1 ~ 0.5 1 0.5 0.05 10
+# Particle effects during countdown (at recall anchor)
+scoreboard players operation #temp recall_id = @s recall_id
+execute as @e[type=armor_stand,tag=recall_anchor] if score @s recall_id = #temp recall_id at @s run particle minecraft:portal ~ ~1 ~ 0.5 1 0.5 0.05 10
 
 # Actionbar countdown display
 execute if score @s recall_timer matches 181..200 run title @s actionbar {"text":"✦ Recalling in 10...","color":"light_purple","bold":true}
