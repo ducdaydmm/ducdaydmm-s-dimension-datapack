@@ -28,7 +28,9 @@
     "depth": "minecraft:overworld/depth",
     "erosion": "minecraft:overworld/erosion",
     "final_density": {
-      "type": "minecraft:min",
+      "type": "minecraft:max",
+      "argument1": {
+        "type": "minecraft:min",
       "argument1": {
         "type": "minecraft:squeeze",
         "argument": {
@@ -165,6 +167,8 @@
         }
       },
       "argument2": "minecraft:overworld/caves/noodle"
+      },
+      "argument2": "ducdaydmm:seabed_spires"
     },
     "fluid_level_floodedness": {
       "type": "minecraft:noise",
