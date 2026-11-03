@@ -1,0 +1,16 @@
+{
+  "structures": [
+    {
+      "structure": "ducdaydmm:pillar",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 7343921,
+    "frequency": 0.6375,
+    "spacing": 2,
+    "separation": 1,
+    "spread_type": "linear"
+  }
+}

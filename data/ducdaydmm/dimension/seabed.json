@@ -7,6 +7,36 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
+          "biome": "ducdaydmm:pillar_site",
+          "parameters": {
+            "temperature": [
+              -0.06,
+              0.06
+            ],
+            "humidity": [
+              -2.0,
+              2.0
+            ],
+            "continentalness": [
+              -2.0,
+              2.0
+            ],
+            "erosion": [
+              -2.0,
+              2.0
+            ],
+            "weirdness": [
+              -0.5,
+              0.5
+            ],
+            "depth": [
+              -1.5,
+              1.5
+            ],
+            "offset": 0.0
+          }
+        },
+        {
           "biome": "ducdaydmm:seabed",
           "parameters": {
             "temperature": [
@@ -181,36 +211,6 @@
             ],
             "depth": [
               0.1,
-              1.5
-            ],
-            "offset": 0.0
-          }
-        },
-        {
-          "biome": "minecraft:deep_frozen_ocean",
-          "parameters": {
-            "temperature": [
-              -1.5,
-              -0.15
-            ],
-            "humidity": [
-              -2.0,
-              2.0
-            ],
-            "continentalness": [
-              -2.0,
-              2.0
-            ],
-            "erosion": [
-              -2.0,
-              2.0
-            ],
-            "weirdness": [
-              -2.0,
-              2.0
-            ],
-            "depth": [
-              -1.5,
               1.5
             ],
             "offset": 0.0
