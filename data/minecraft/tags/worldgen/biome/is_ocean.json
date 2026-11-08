@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ducdaydmm:ocean",
+    "ducdaydmm:deep_ocean",
+    "ducdaydmm:warm_ocean",
+    "ducdaydmm:lukewarm_ocean",
+    "ducdaydmm:deep_lukewarm_ocean"
+  ]
+}

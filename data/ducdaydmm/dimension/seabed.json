@@ -7,67 +7,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "ducdaydmm:pillar_site",
-          "parameters": {
-            "temperature": [
-              -0.06,
-              0.06
-            ],
-            "humidity": [
-              -2.0,
-              2.0
-            ],
-            "continentalness": [
-              -2.0,
-              2.0
-            ],
-            "erosion": [
-              -2.0,
-              2.0
-            ],
-            "weirdness": [
-              -0.5,
-              0.5
-            ],
-            "depth": [
-              -1.5,
-              1.5
-            ],
-            "offset": 0.0
-          }
-        },
-        {
-          "biome": "ducdaydmm:seabed",
-          "parameters": {
-            "temperature": [
-              -0.15,
-              0.15
-            ],
-            "humidity": [
-              -2.0,
-              2.0
-            ],
-            "continentalness": [
-              -2.0,
-              2.0
-            ],
-            "erosion": [
-              -2.0,
-              2.0
-            ],
-            "weirdness": [
-              -2.0,
-              2.0
-            ],
-            "depth": [
-              0.3,
-              1.5
-            ],
-            "offset": 0.0
-          }
-        },
-        {
-          "biome": "minecraft:deep_ocean",
+          "biome": "ducdaydmm:deep_ocean",
           "parameters": {
             "temperature": [
               -0.15,
@@ -91,13 +31,13 @@
             ],
             "depth": [
               -0.1,
-              0.3
+              1.5
             ],
             "offset": 0.0
           }
         },
         {
-          "biome": "minecraft:ocean",
+          "biome": "ducdaydmm:ocean",
           "parameters": {
             "temperature": [
               -0.15,
@@ -127,7 +67,7 @@
           }
         },
         {
-          "biome": "minecraft:warm_ocean",
+          "biome": "ducdaydmm:warm_ocean",
           "parameters": {
             "temperature": [
               0.45,
@@ -157,7 +97,7 @@
           }
         },
         {
-          "biome": "minecraft:lukewarm_ocean",
+          "biome": "ducdaydmm:lukewarm_ocean",
           "parameters": {
             "temperature": [
               0.15,
@@ -187,7 +127,7 @@
           }
         },
         {
-          "biome": "minecraft:deep_lukewarm_ocean",
+          "biome": "ducdaydmm:deep_lukewarm_ocean",
           "parameters": {
             "temperature": [
               0.15,
