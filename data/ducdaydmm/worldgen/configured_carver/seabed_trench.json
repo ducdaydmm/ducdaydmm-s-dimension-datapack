@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:canyon",
+  "config": {
+    "lava_level": {
+      "above_bottom": 4
+    },
+    "probability": 0.07,
+    "replaceable": "#minecraft:overworld_carver_replaceables",
+    "shape": {
+      "distance_factor": {
+        "type": "minecraft:uniform",
+        "max_exclusive": 1.25,
+        "min_inclusive": 0.75
+      },
+      "horizontal_radius_factor": {
+        "type": "minecraft:uniform",
+        "max_exclusive": 2.0,
+        "min_inclusive": 1.0
+      },
+      "thickness": {
+        "type": "minecraft:trapezoid",
+        "max": 10.0,
+        "min": 2.0,
+        "plateau": 4.0
+      },
+      "vertical_radius_center_factor": 0.0,
+      "vertical_radius_default_factor": 1.5,
+      "width_smoothness": 4
+    },
+    "vertical_rotation": {
+      "type": "minecraft:uniform",
+      "max_exclusive": 0.15,
+      "min_inclusive": -0.15
+    },
+    "y": {
+      "type": "minecraft:uniform",
+      "max_inclusive": {
+        "absolute": 100
+      },
+      "min_inclusive": {
+        "above_bottom": 8
+      }
+    },
+    "yScale": 4.5
+  }
+}
+
