@@ -1,0 +1,12 @@
+{
+  "type": "ducdaydmm:lattice",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "ducdaydmm:lattice",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "ducdaydmm:lattice"
+    }
+  }
+}
+

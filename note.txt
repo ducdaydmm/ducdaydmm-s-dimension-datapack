@@ -1,0 +1,24 @@
+# GHI CHÚ: CƠ CHẾ SINH RƯƠNG CÓ KHO BÁU (LOOT TABLE) VÀ KHỐI NBT TRONG WORLDGEN
+
+1. Vấn đề với BlockState thông thường:
+   - Các tính năng sinh khối cơ bản trong worldgen (như block_column, simple_block, weighted_state_provider) chỉ làm việc với BlockState thuần (tên block, ví dụ: minecraft:chest).
+   - Khi game đặt một chiếc rương theo BlockState, game sẽ tự động khởi tạo một ChestBlockEntity hoàn toàn rỗng (không có dữ liệu LootTable hay vật phẩm bên trong).
+
+2. Giải pháp dùng Structure (NBT):
+   - Để rương sinh ra tự nhiên mang theo bảng kho báu (LootTable), Minecraft bắt buộc phải đọc từ định dạng Structure (.nbt).
+   - Tạo một file structure NBT siêu nhỏ (kích thước 1x1x1 block) chứa đúng 1 block rương mang thẻ NBT:
+     {id: "minecraft:chest", LootTable: "minecraft:chests/<tên_loot_table>"}
+   - Sau đó cấu hình một Feature dạng template (minecraft:template) hoặc structure để đặt chiếc rương NBT này vào thế giới.
+
+3. Cách "trộn" rương kho báu vào ma trận không gian (Lattice):
+   - Mạng lưới 1.066 block (lattice_column) vẫn sinh ngẫu nhiên bình thường.
+   - Bổ sung thêm một Placed Feature chứa cấu trúc rương NBT (1x1x1) nói trên, đặt đúng vào các mắt lưới ma trận (tọa độ chia hết cho 16) với tỉ lệ hiếm (ví dụ: mỗi 20-50 chunk có 1 rương).
+   - Chiếc rương NBT này sẽ được "trộn" tự nhiên vào ma trận, nhìn bề ngoài như một khối bình thường nhưng khi mở ra sẽ tự động roll kho báu theo LootTable.
+
+4. Mở rộng cho các khối NBT khác:
+   - Cơ chế Structure NBT này cũng có thể áp dụng tương tự để trộn các khối đặc biệt khác vào ma trận:
+     + Lồng quái (Spawner) có sẵn loại quái cụ thể.
+     + Hộp Shulker có chứa sẵn vật phẩm bên trong.
+     + Biển báo có sẵn chữ / thông điệp bí ẩn.
+     + Két sắt Trial Chamber (Vault).
+
