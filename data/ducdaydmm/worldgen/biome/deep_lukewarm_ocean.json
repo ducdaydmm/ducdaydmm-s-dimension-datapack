@@ -106,14 +106,7 @@
   "has_precipitation": true,
   "spawn_costs": {},
   "spawners": {
-    "ambient": [
-      {
-        "type": "minecraft:bat",
-        "maxCount": 8,
-        "minCount": 8,
-        "weight": 10
-      }
-    ],
+    "ambient": [],
     "axolotls": [],
     "creature": [],
     "misc": [],
@@ -129,12 +122,6 @@
         "maxCount": 4,
         "minCount": 4,
         "weight": 95
-      },
-      {
-        "type": "minecraft:zombie_villager",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 5
       },
       {
         "type": "minecraft:skeleton",
@@ -167,58 +154,64 @@
         "weight": 5
       },
       {
+        "type": "minecraft:bogged",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 30
+      },
+      {
         "type": "minecraft:drowned",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 35
+      },
+      {
+        "type": "minecraft:guardian",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 15
+      },
+      {
+        "type": "minecraft:elder_guardian",
         "maxCount": 1,
         "minCount": 1,
-        "weight": 5
+        "weight": 3
       }
     ],
     "underground_water_creature": [
       {
         "type": "minecraft:glow_squid",
-        "maxCount": 6,
-        "minCount": 4,
-        "weight": 10
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 3
       }
     ],
     "water_ambient": [
       {
-        "type": "minecraft:cod",
-        "maxCount": 6,
-        "minCount": 3,
-        "weight": 8
-      },
-      {
-        "type": "minecraft:pufferfish",
-        "maxCount": 3,
-        "minCount": 1,
-        "weight": 5
-      },
-      {
         "type": "minecraft:tropical_fish",
         "maxCount": 8,
-        "minCount": 8,
-        "weight": 25
+        "minCount": 4,
+        "weight": 10
+      },
+      {
+        "type": "minecraft:salmon",
+        "maxCount": 5,
+        "minCount": 3,
+        "weight": 5
       }
     ],
     "water_creature": [
-      {
-        "type": "minecraft:squid",
-        "maxCount": 4,
-        "minCount": 1,
-        "weight": 8
-      },
-      {
-        "type": "minecraft:dolphin",
-        "maxCount": 2,
-        "minCount": 1,
-        "weight": 2
-      },
       {
         "type": "minecraft:nautilus",
         "maxCount": 1,
         "minCount": 1,
         "weight": 5
+      },
+      {
+        "type": "minecraft:squid",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 2
       }
     ]
   },

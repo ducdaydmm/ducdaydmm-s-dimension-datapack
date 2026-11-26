@@ -104,16 +104,14 @@
     ]
   ],
   "has_precipitation": true,
-  "spawn_costs": {},
+  "spawn_costs": {
+    "minecraft:glow_squid": {
+      "charge": 0.7,
+      "energy_budget": 0.15
+    }
+  },
   "spawners": {
-    "ambient": [
-      {
-        "type": "minecraft:bat",
-        "maxCount": 8,
-        "minCount": 8,
-        "weight": 10
-      }
-    ],
+    "ambient": [],
     "axolotls": [],
     "creature": [],
     "misc": [],
@@ -129,12 +127,6 @@
         "maxCount": 4,
         "minCount": 4,
         "weight": 95
-      },
-      {
-        "type": "minecraft:zombie_villager",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 5
       },
       {
         "type": "minecraft:skeleton",
@@ -167,7 +159,19 @@
         "weight": 5
       },
       {
+        "type": "minecraft:bogged",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 30
+      },
+      {
         "type": "minecraft:drowned",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 40
+      },
+      {
+        "type": "minecraft:elder_guardian",
         "maxCount": 1,
         "minCount": 1,
         "weight": 5
@@ -176,37 +180,31 @@
     "underground_water_creature": [
       {
         "type": "minecraft:glow_squid",
-        "maxCount": 6,
-        "minCount": 4,
-        "weight": 10
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 3
       }
     ],
     "water_ambient": [
       {
-        "type": "minecraft:cod",
-        "maxCount": 6,
+        "type": "minecraft:salmon",
+        "maxCount": 5,
         "minCount": 3,
         "weight": 10
       }
     ],
     "water_creature": [
       {
-        "type": "minecraft:squid",
-        "maxCount": 4,
-        "minCount": 1,
-        "weight": 1
-      },
-      {
-        "type": "minecraft:dolphin",
-        "maxCount": 2,
-        "minCount": 1,
-        "weight": 1
-      },
-      {
         "type": "minecraft:nautilus",
         "maxCount": 1,
         "minCount": 1,
         "weight": 5
+      },
+      {
+        "type": "minecraft:squid",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 2
       }
     ]
   },
